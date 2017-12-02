@@ -33,7 +33,7 @@ class SadadPaymentMethod extends PaymentMethodTypeBase {
   public function buildFieldDefinitions() {
     $fields = parent::buildFieldDefinitions();
 
-    $fields['sadad_account'] = BundleFieldDefinition::create('textfield')
+    $fields['sadad_account'] = BundleFieldDefinition::create('string')
       ->setLabel(t('Sadad Account'))
       ->setDescription(t('Sadad online payment ID.'))
       ->setRequired(TRUE);
