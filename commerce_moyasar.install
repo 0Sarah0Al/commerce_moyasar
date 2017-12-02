@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * Implements hook_requirements().
+ */
+function commerce_moyasar_requirements($phase) {
+  $requirements = [];
+  if ($phase == 'install') {
+    if (!class_exists('\Moyasar\Payment')) {
+      $requirements['moyasar_library'] = [
+        'title' => t('Moyasar'),
+        'description' => t('Commerce Moyasar requires Moyasar library. Documentation is provided <a href="@url">here</a>.', [
+            '@url' => 'https://github.com/moyasar/moyasar-php',
+          ]),
+        'severity' => REQUIREMENT_ERROR,
+      ];
+    }
+  }
+
+  return $requirements;
+}

@@ -1,0 +1,19 @@
+commerce_payment.commerce_payment_gateway.plugin.moyasar_gateway:
+  type: commerce_payment_gateway_configuration
+  mapping:
+    publishable_key:
+      type: string
+      label: 'Publishable key'
+    secret_key:
+      type: string
+      label: 'Secret key'
+
+commerce_payment.commerce_payment_gateway.plugin.sadad_gateway:
+  type: commerce_payment_gateway_configuration
+  mapping:
+    publishable_key:
+      type: string
+      label: 'Publishable key'
+    secret_key:
+      type: string
+      label: 'Secret key'

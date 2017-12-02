@@ -1,0 +1,7 @@
+name: Commerce Moyasar
+type: module
+description: "Moyasar payment integration for Drupal Commerce 2.x."
+package: Commerce (contrib)
+core: 8.x
+dependencies:
+  - commerce:commerce_payment

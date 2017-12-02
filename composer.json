@@ -1,0 +1,18 @@
+{
+  "name": "drupal/commerce_moyasar",
+  "description": "Moyasar payment integration for Drupal Commerce 2.x.",
+  "homepage": "http://drupal.org/project/commerce_moyasar",
+  "type": "drupal-module",
+  "authors": [
+    {
+      "name": "Sarah Al",
+      "homepage": "https://www.drupal.org/u/sarahphp1",
+      "role": "Maintainer"
+    }
+  ],
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "require": {
+    "moyasar/moyasar-php": "~0.4.0"
+  }
+}
